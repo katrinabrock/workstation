@@ -1,8 +1,7 @@
+workstation_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 sudo apt-get install python-pip
 sudo pip install virtualenv
-virtualenv ~/dev-env
-source ~/dev-env/bin/activate
-pip install flake8
-pip install autopep8
-pip install pyflakes
+virtualenv ~/devenv
+source ~/devenv/bin/activate
+pip install -r $workstation_dir/devenv_requires.txt
 deactivate
