@@ -10,6 +10,9 @@ autocmd FileType c,cpp,java,php,python autocmd BufWritePre <buffer> %s/\s\+$//e
 
 autocmd FileType python call system('tmux resize-pane -x 81')
 
+"Map pydocstring to <C-m>
+nmap <silent> <C-m> <Plug>(pydocstring)
+
 let g:pydoc_cmd = 'python -m pydoc' 
 
 "Slimux configs
