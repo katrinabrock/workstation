@@ -21,6 +21,7 @@ Flask-Jsonpify==1.5.0
 fn==0.4.3
 functools32==3.2.3.post2
 future==0.16.0
+h5py
 imagesize==0.7.1
 ipython==5.1.0
 ipython-genutils==0.1.0
