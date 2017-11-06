@@ -1,2 +1,0 @@
-# Remap capslock and escape
-/usr/bin/setxkbmap -option "caps:swapescape"
