@@ -17,3 +17,6 @@ set-option -g allow-rename off
 # vim key bindings in copy mode
 set-window-option -g mode-keys vi
 
+
+# status at top
+set -g status-position top
