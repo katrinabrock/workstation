@@ -14,9 +14,16 @@ bind -n C-\ run "(tmux display-message -p '#{pane_current_command}' | grep -iq v
 # don't rename windows automatically
 set-option -g allow-rename off
 
+# Bind H to logging
+# SO#5832
+# bind-key H pipe-pane -o "exec cat >>$HOME/'#W-tmux.md'"
+# not doing this because I want plaintext not typescript
+
 # vim key bindings in copy mode
 set-window-option -g mode-keys vi
 
-
 # status at top
 set -g status-position top
+
+# Fix vim colors
+set -g default-terminal "screen-256color"
