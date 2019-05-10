@@ -19,6 +19,9 @@ set-option -g allow-rename off
 # bind-key H pipe-pane -o "exec cat >>$HOME/'#W-tmux.md'"
 # not doing this because I want plaintext not typescript
 
+# Another logging attempt
+run-shell ~/workstation/tmux-logging/logging.tmux
+
 # vim key bindings in copy mode
 set-window-option -g mode-keys vi
 
