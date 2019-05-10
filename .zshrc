@@ -7,7 +7,7 @@
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
 # Customize to your needs...
@@ -44,3 +44,23 @@ source /home/kbrock/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Set Ctrl-R
 bindkey -v
 bindkey "^R" history-incremental-search-backward
+
+source ~/.nuage-workstation/intrc.sh
+export TERM=screen-256color
+
+# added by travis gem
+[ -f /home/kbrock/.travis/travis.sh ] && source /home/kbrock/.travis/travis.sh
+
+alias em='vim `git diff --name-only --relative`'
+alias loghead='git log --oneline|head'
+
+export GOPATH=$HOME/go
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
+export GITHUB_URL=https://github.mv.usa.alcatel.com/
+
+source ~/devenv/bin/activate
+
+if [ -z "$TMUX" ]; then
+    tmux attach -t default || tmux new -s default
+fi
