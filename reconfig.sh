@@ -16,4 +16,6 @@ git clone https://github.com/olivierverdier/zsh-git-prompt ~/zsh-git-prompt
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/zsh-syntax-highlighting
 ln ~/.vim/vimrc ~/.vimrc
 ln tmuxconf  ~/.tmux.conf
+ln gitignore_global ~/.gitignore_global
 
+git config --global core.excludesfile ~/.gitignore_global
