@@ -106,3 +106,10 @@ export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 
 # reviewers for hub pull-request
 ds=ajzz,orenscarmeli,kdhamada
+
+# Default to python3
+export alias python=/usr/local/bin/python3
+export alias pip=/usr/local/bin/pip3
+export PYTHONPATH="/usr/local/Cellar/python/3.7.0/bin/python3:$PYTHONPATH"
+export RETICULATE_PYTHON=/usr/local/bin/python3
+
